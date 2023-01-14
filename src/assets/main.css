@@ -1,0 +1,67 @@
+@import './base.css';
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+
+  font-weight: normal;
+}
+
+a,
+.green {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    place-items: center;
+  }
+
+  #app {
+    background-color: rgb(236, 242, 254);
+    grid-template-columns: 1fr 1fr;
+    padding: 0 2rem;
+    border-radius: 10px;
+    box-shadow: 0px 10px 50px;
+  }
+}
+
+.grid{
+  padding: 3%;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows:  1fr 1fr;
+
+}
+
+.card{
+  background-color: rgb(182, 182, 182);
+  height: 40vh;
+  box-shadow: 0px 5px 10px rgb(83, 114, 171);
+  padding: 15px;
+}
+
+.imgcenter{
+  display: block;
+  border-radius: 8px;
+  margin-top: 1%;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 98%;
+  height: 200px;
+  box-shadow: 0px 0.5px 5px;
+  
+}
+
